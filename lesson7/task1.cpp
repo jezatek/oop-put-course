@@ -29,7 +29,7 @@ int main()
     std::string cal;
     Elf elf = Elf(0);
     Bestelf adam=Bestelf(0);
-    while(std::getline(std::cin,cal)&&cal[0]!='-')
+    while(!std::getline(std::cin,cal).eof()&&cal[0]!='-')
     {
         if(cal==""){
             adam.newelf(elf.result());
